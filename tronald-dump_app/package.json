@@ -1,0 +1,24 @@
+{
+  "name": "tronald-dump_app",
+  "version": "1.0.0",
+  "description": "A CLI for the tronald-dump API",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannypadilla/tronald-dump-api.git"
+  },
+  "author": "Danny Padilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dannypadilla/tronald-dump-api/issues"
+  },
+  "homepage": "https://github.com/dannypadilla/tronald-dump-api#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "superagent": "^4.1.0",
+    "yargs": "^13.2.2"
+  }
+}
