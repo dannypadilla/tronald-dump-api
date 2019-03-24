@@ -1,0 +1,22 @@
+{
+  "name": "tronald-dump",
+  "version": "1.0.0",
+  "description": "Module for accessing the Tronald Dump API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannypadilla/tronald-dump-api.git"
+  },
+  "author": "Danny Padilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dannypadilla/tronald-dump-api/issues"
+  },
+  "homepage": "https://github.com/dannypadilla/tronald-dump-api#readme",
+  "dependencies": {
+    "superagent": "^4.1.0"
+  }
+}
