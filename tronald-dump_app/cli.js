@@ -5,25 +5,28 @@ const app = require("./app")
 const flags = yargs
   .usage("$0: Usage <cmd> [options]")
   .command({
-    command: "quote",
-    desc: "gets a quote",
+    command: "search",
+    desc: "Search what Donald Trump said about a topic via twitter",
     builder: (yargs) => {
       return yargs
-        .options("s", {
-          alias: "search",
-          describe: "search for a key word"
+        .options("t", {
+          alias: "topic",
+          describe: "search for a topic",
+          type: "string"
         })
         .options("r", {
           alias: "random",
-          describe: "gets a random quote"
+          describe: "gets a random quote",
+          type: "boolean"
         })
-        .options("n", {
-          alias: "num",
-          describe: "number of quotes to return (limit is 5)"
+        .options("d", {
+          alias: "debug",
+          describe: "runs a query to demo the full body structure",
+          type: "boolean"
         })
     },
     handler: (argv) => {
-      app.get_quote(argv.search, argv.random, argv.num);
+      app.search(argv.topic, argv.random, argv.debug);
     }
   })
   .help("help")
